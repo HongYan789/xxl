@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="XxlJobRegistryMapper">
+	
+	<resultMap id="XxlJobRegistry" type="com.xxl.job.admin.core.model.XxlJobRegistry" >
+		<result column="id" property="id" />
+	    <result column="registry_group" property="registryGroup" />
+	    <result column="registry_key" property="registryKey" />
+	    <result column="registry_value" property="registryValue" />
+		<result column="update_time" property="updateTime" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		t.id,
+		t.registry_group,
+		t.registry_key,
+		t.registry_value,
+		t.update_time
+	</sql>
+	
+	<!-- by zhangyan 生成最新的序列-->
+	<sql id='TABLE_SEQUENCE'>TRIGGER_REGISTRY_SEQUENCE.nextval</sql>
+	
+	<delete id="removeDead" parameterType="java.lang.Integer" >
+		DELETE FROM XXL_TRIGGER_REGISTRY
+		WHERE update_time &lt;  to_date(to_char(sysdate-#{timeout}/24/60/60,'yyyy-mm-dd HH24:MI:SS'),'yyyy-mm-dd HH24:MI:SS')
+		<!-- 
+		WHERE update_time <![CDATA[ < ]]> DATE_ADD(sysdate,INTERVAL -#{timeout} SECOND)
+		 -->
+	</delete>
+
+	<select id="findAll" parameterType="java.lang.Integer" resultMap="XxlJobRegistry">
+		SELECT <include refid="Base_Column_List" />
+		FROM XXL_TRIGGER_REGISTRY  t
+		WHERE t.update_time &gt; to_date(to_char(sysdate-#{timeout}/24/60/60,'yyyy-mm-dd HH24:MI:SS'),'yyyy-mm-dd HH24:MI:SS')
+		<!-- 
+		WHERE t.update_time <![CDATA[ > ]]> DATE_ADD(NOW(),INTERVAL -#{timeout} SECOND) 
+		-->
+	</select>
+
+    <update id="registryUpdate" parameterType="java.util.Map" >
+        UPDATE XXL_TRIGGER_REGISTRY
+        SET update_time = sysdate
+        WHERE registry_group = #{registryGroup}
+          AND registry_key = #{registryKey}
+          AND registry_value = #{registryValue}
+    </update>
+
+    <insert id="registrySave" parameterType="java.util.Map" >
+     <!-- by zhangyan 新增数据时采用序列自增长而非uuid形式-->
+	  <selectKey keyProperty="id" resultType="int" order="BEFORE">         
+	     select <include refid="TABLE_SEQUENCE" /> from dual     
+	  </selectKey>
+        INSERT INTO XXL_TRIGGER_REGISTRY( id,registry_group , registry_key , registry_value, update_time)
+        VALUES( #{id},#{registryGroup}  , #{registryKey} , #{registryValue}, sysdate)
+    </insert>
+
+</mapper>

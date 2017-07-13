@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="XxlJobGroupMapper">
+	
+	<resultMap id="XxlJobGroup" type="com.xxl.job.admin.core.model.XxlJobGroup" >
+		<result column="id" property="id" />
+	    <result column="app_name" property="appName" />
+	    <result column="title" property="title" />
+	    <result column="order" property="order" />
+		<result column="address_type" property="addressType" />
+		<result column="address_list" property="addressList" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		t.id,
+		t.app_name,
+		t.title,
+		t."ORDER",
+		t.address_type,
+		t.address_list
+	</sql>
+	
+	<!-- by zhangyan 生成最新的序列-->
+	<sql id='TABLE_SEQUENCE'>TRIGGER_GROUP_SEQUENCE.nextval</sql>
+
+	<select id="findAll" parameterType="java.lang.Integer" resultMap="XxlJobGroup">
+		SELECT <include refid="Base_Column_List" />
+		FROM XXL_TRIGGER_GROUP  t
+		ORDER BY t."ORDER" ASC
+	</select>
+
+	<insert id="save" parameterType="com.xxl.job.admin.core.model.XxlJobGroup" >
+	   <!-- by zhangyan 新增数据时采用序列自增长而非uuid形式-->
+	  <selectKey keyProperty="id" resultType="int" order="BEFORE">         
+	     select <include refid="TABLE_SEQUENCE" /> from dual     
+	  </selectKey>
+		INSERT INTO XXL_TRIGGER_GROUP ( id,app_name, title, "ORDER", address_type, address_list)
+		values ( #{id},#{appName}, #{title}, #{order}, #{addressType}, #{addressList})
+	</insert>
+
+	<update id="update" parameterType="com.xxl.job.admin.core.model.XxlJobGroup" >
+		UPDATE XXL_TRIGGER_GROUP
+		SET app_name = #{appName},
+			title = #{title},
+			"ORDER" = #{order},
+			address_type = #{addressType},
+			address_list = #{addressList}
+		WHERE id = #{id}
+	</update>
+
+	<delete id="remove" parameterType="java.lang.Integer" >
+		DELETE FROM XXL_TRIGGER_GROUP
+		WHERE id = #{id}
+	</delete>
+
+	<select id="load" parameterType="java.lang.Integer" resultMap="XxlJobGroup">
+		SELECT <include refid="Base_Column_List" />
+		FROM XXL_TRIGGER_GROUP  t
+		WHERE t.id = #{id}
+	</select>
+
+</mapper>
