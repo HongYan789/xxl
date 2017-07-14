@@ -74,10 +74,7 @@ NOCACHE
 -- ----------------------------
 -- Records of XXL_CRON_TRIGGERS
 -- ----------------------------
-INSERT INTO "XXL"."XXL_CRON_TRIGGERS" VALUES ('quartzScheduler', '8', '3', '* * * * * ?', 'Asia/Shanghai');
-INSERT INTO "XXL"."XXL_CRON_TRIGGERS" VALUES ('quartzScheduler', '4', '3', '* * * * * ?', 'Asia/Shanghai');
-INSERT INTO "XXL"."XXL_CRON_TRIGGERS" VALUES ('quartzScheduler', '7', '3', '* * * * * ?', 'Asia/Shanghai');
-INSERT INTO "XXL"."XXL_CRON_TRIGGERS" VALUES ('quartzScheduler', '6', '3', '* * * * * ?', 'Asia/Shanghai');
+
 
 -- ----------------------------
 -- Table structure for XXL_FIRED_TRIGGERS
@@ -107,7 +104,6 @@ NOCACHE
 -- ----------------------------
 -- Records of XXL_FIRED_TRIGGERS
 -- ----------------------------
-INSERT INTO "XXL"."XXL_FIRED_TRIGGERS" VALUES ('quartzScheduler', 'DESKTOP-MVNDQD114999420565531499942056592', '8', '3', 'DESKTOP-MVNDQD11499942056553', '1499942169483', '1499942169000', '5', 'EXECUTING', '8', '3', '0', '0');
 
 -- ----------------------------
 -- Table structure for XXL_JOB_DETAILS
@@ -134,10 +130,6 @@ NOCACHE
 -- ----------------------------
 -- Records of XXL_JOB_DETAILS
 -- ----------------------------
-INSERT INTO "XXL"."XXL_JOB_DETAILS" VALUES ('quartzScheduler', '8', '3', null, 'com.xxl.job.admin.core.jobbean.RemoteHttpJobBean', '0', '0', '0', '0', HexToRaw('ACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787000737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000007800'));
-INSERT INTO "XXL"."XXL_JOB_DETAILS" VALUES ('quartzScheduler', '4', '3', null, 'com.xxl.job.admin.core.jobbean.RemoteHttpJobBean', '0', '0', '0', '0', HexToRaw('ACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787000737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000007800'));
-INSERT INTO "XXL"."XXL_JOB_DETAILS" VALUES ('quartzScheduler', '7', '3', null, 'com.xxl.job.admin.core.jobbean.RemoteHttpJobBean', '0', '0', '0', '0', HexToRaw('ACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787000737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000007800'));
-INSERT INTO "XXL"."XXL_JOB_DETAILS" VALUES ('quartzScheduler', '6', '3', null, 'com.xxl.job.admin.core.jobbean.RemoteHttpJobBean', '0', '0', '0', '0', HexToRaw('ACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787000737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000007800'));
 
 -- ----------------------------
 -- Table structure for XXL_LOCKS
@@ -156,8 +148,6 @@ NOCACHE
 -- ----------------------------
 -- Records of XXL_LOCKS
 -- ----------------------------
-INSERT INTO "XXL"."XXL_LOCKS" VALUES ('quartzScheduler', 'STATE_ACCESS');
-INSERT INTO "XXL"."XXL_LOCKS" VALUES ('quartzScheduler', 'TRIGGER_ACCESS');
 
 -- ----------------------------
 -- Table structure for XXL_PAUSED_TRIGGER_GRPS
@@ -196,7 +186,6 @@ NOCACHE
 -- ----------------------------
 -- Records of XXL_SCHEDULER_STATE
 -- ----------------------------
-INSERT INTO "XXL"."XXL_SCHEDULER_STATE" VALUES ('quartzScheduler', 'DESKTOP-MVNDQD11499942056553', '1499942168729', '5000');
 
 -- ----------------------------
 -- Table structure for XXL_SIMPLE_TRIGGERS
@@ -276,8 +265,6 @@ COMMENT ON COLUMN "XXL"."XXL_TRIGGER_GROUP"."ADDRESS_LIST" IS '执行器地址�
 -- ----------------------------
 -- Records of XXL_TRIGGER_GROUP
 -- ----------------------------
-INSERT INTO "XXL"."XXL_TRIGGER_GROUP" VALUES ('1', 'xxl-job-executor-example', '示例执行器', '1', '0', null);
-INSERT INTO "XXL"."XXL_TRIGGER_GROUP" VALUES ('3', 'xxl-job-executor-example', 'test', '1', '0', null);
 
 -- ----------------------------
 -- Table structure for XXL_TRIGGER_INFO
@@ -326,50 +313,6 @@ COMMENT ON COLUMN "XXL"."XXL_TRIGGER_INFO"."CHILD_JOBKEY" IS '子任务Key';
 -- ----------------------------
 -- Records of XXL_TRIGGER_INFO
 -- ----------------------------
-INSERT INTO "XXL"."XXL_TRIGGER_INFO" VALUES ('8', '3', '* * * * * ?', 'test4', TO_TIMESTAMP(' 2017-07-13 23:30:26:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), TO_TIMESTAMP(' 2017-07-13 23:30:26:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), 'zzrrr', null, 'FIRST', 'demoJobHandler', null, 'SERIAL_EXECUTION', 'FAIL_ALARM', 'BEAN', null, 'GLUE代码初始化', TO_TIMESTAMP(' 2017-07-13 23:30:26:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), null);
-INSERT INTO "XXL"."XXL_TRIGGER_INFO" VALUES ('4', '3', '* * * * * ?', 'test1', TO_TIMESTAMP(' 2017-07-13 17:42:04:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), TO_TIMESTAMP(' 2017-07-13 17:42:04:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), 'zy', null, 'FAILOVER', null, null, 'SERIAL_EXECUTION', 'FAIL_ALARM', 'GLUE_GROOVY', 'package com.xxl.job.service.handler;
-
-import com.xxl.job.core.log.XxlJobLogger;
-import com.xxl.job.core.biz.model.ReturnT;
-import com.xxl.job.core.handler.IJobHandler;
-
-public class DemoGlueJobHandler extends IJobHandler {
-
-	@Override
-	public ReturnT<String> execute(String... params) throws Exception {
-		XxlJobLogger.log("XXL-JOB, Hello World.");
-		return ReturnT.SUCCESS;
-	}
-
-}
-', 'GLUE代码初始化', TO_TIMESTAMP(' 2017-07-13 17:42:04:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), null);
-INSERT INTO "XXL"."XXL_TRIGGER_INFO" VALUES ('7', '3', '* * * * * ?', 'tt3', TO_TIMESTAMP(' 2017-07-13 22:45:01:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), TO_TIMESTAMP(' 2017-07-13 22:45:01:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), 'ttt', null, 'FAILOVER', null, null, 'SERIAL_EXECUTION', 'FAIL_ALARM', 'GLUE_SHELL', '#!/bin/bash
-echo "xxl-job: hello shell"
-
-echo "脚本位置：$0"
-echo "参数数量：$#"
-for param in $*
-do
-    echo "参数 : $param"
-    sleep 1s
-done
-
-echo "Good bye!"
-exit 0
-', 'GLUE代码初始化', TO_TIMESTAMP(' 2017-07-13 22:45:01:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), null);
-INSERT INTO "XXL"."XXL_TRIGGER_INFO" VALUES ('6', '3', '* * * * * ?', 'test3', TO_TIMESTAMP(' 2017-07-13 18:01:38:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), TO_TIMESTAMP(' 2017-07-13 18:01:38:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), 'zzee', null, 'FAILOVER', null, null, 'SERIAL_EXECUTION', 'FAIL_ALARM', 'GLUE_PYTHON', '#!/usr/bin/python
-# -*- coding: UTF-8 -*-
-import time
-import sys
-
-print "xxl-job: hello python"
-print "脚本文件：", sys.argv[0]
-for i in range(1, len(sys.argv)):
-	time.sleep(1)
-	print "参数", i, sys.argv[i]
-
-print "Good bye!"
-exit(0)', 'GLUE代码初始化', TO_TIMESTAMP(' 2017-07-13 18:01:38:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'), null);
 
 -- ----------------------------
 -- Table structure for XXL_TRIGGER_LOG
@@ -411,22 +354,6 @@ COMMENT ON COLUMN "XXL"."XXL_TRIGGER_LOG"."HANDLE_MSG" IS '执行-日志';
 -- ----------------------------
 -- Records of XXL_TRIGGER_LOG
 -- ----------------------------
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('880', '3', '4', 'GLUE_GROOVY', '127.0.0.1:9999', null, null, TO_TIMESTAMP(' 2017-07-13 17:12:53:090000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 17:12:53:553000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('883', '3', '4', 'GLUE_GROOVY', '127.0.0.1:9999', null, null, TO_TIMESTAMP(' 2017-07-13 17:12:55:038000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 17:12:55:195000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('885', '3', '4', 'GLUE_GROOVY', '127.0.0.1:9999', null, null, TO_TIMESTAMP(' 2017-07-13 17:12:56:164000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 17:12:56:324000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('887', '3', '4', 'GLUE_GROOVY', '127.0.0.1:9999', null, null, TO_TIMESTAMP(' 2017-07-13 17:12:57:291000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 17:12:57:446000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('889', '3', '4', 'GLUE_GROOVY', '127.0.0.1:9999', null, null, TO_TIMESTAMP(' 2017-07-13 17:12:58:374000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 17:12:58:534000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('900', '3', '4', 'GLUE_GROOVY', '127.0.0.1:9999', null, null, TO_TIMESTAMP(' 2017-07-13 17:13:04:567000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 17:13:04:726000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('917', '3', '4', 'GLUE_GROOVY', '127.0.0.1:9999', null, null, TO_TIMESTAMP(' 2017-07-13 17:13:19:388000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 17:13:19:546000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('875', '3', '4', 'GLUE_GROOVY', '127.0.0.1:9999', null, null, TO_TIMESTAMP(' 2017-07-13 17:12:50:442000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 17:12:50:592000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('1632', '3', '8', 'BEAN', '127.0.0.1:9999', 'demoJobHandler', null, TO_TIMESTAMP(' 2017-07-13 18:35:27:834000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 18:35:28:345000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('1634', '3', '8', 'BEAN', '127.0.0.1:9999', 'demoJobHandler', null, TO_TIMESTAMP(' 2017-07-13 18:35:29:451000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 18:35:29:707000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('1642', '3', '8', 'BEAN', '127.0.0.1:9999', 'demoJobHandler', null, TO_TIMESTAMP(' 2017-07-13 18:35:36:240000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 18:35:36:420000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('1645', '3', '8', 'BEAN', '127.0.0.1:9999', 'demoJobHandler', null, TO_TIMESTAMP(' 2017-07-13 18:35:38:465000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 18:35:38:636000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('1667', '3', '8', 'BEAN', '127.0.0.1:9999', 'demoJobHandler', null, TO_TIMESTAMP(' 2017-07-13 18:36:02:111000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 18:36:02:260000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('1669', '3', '8', 'BEAN', '127.0.0.1:9999', 'demoJobHandler', null, TO_TIMESTAMP(' 2017-07-13 18:36:04:302000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 18:36:04:440000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
-INSERT INTO "XXL"."XXL_TRIGGER_LOG" VALUES ('1672', '3', '8', 'BEAN', '127.0.0.1:9999', 'demoJobHandler', null, TO_TIMESTAMP(' 2017-07-13 18:36:06:428000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', '注册方式：自动注册<br>阻塞处理策略：单机串行<br>失败处理策略：失败告警<br>地址列表：[127.0.0.1:9999]<br>----------------------<br>触发调度：<br>address：127.0.0.1:9999<br>code：200<br>msg：null', TO_TIMESTAMP(' 2017-07-13 18:36:06:571000', 'YYYY-MM-DD HH24:MI:SS:FF6'), '200', null);
 
 -- ----------------------------
 -- Table structure for XXL_TRIGGER_LOGGLUE
@@ -475,7 +402,6 @@ NOCACHE
 -- ----------------------------
 -- Records of XXL_TRIGGER_REGISTRY
 -- ----------------------------
-INSERT INTO "XXL"."XXL_TRIGGER_REGISTRY" VALUES ('23', 'EXECUTOR', 'xxl-job-executor-example', '127.0.0.1:9999', TO_TIMESTAMP(' 2017-07-13 23:30:51:000000', 'YYYY-MM-DD HH24:MI:SS:FF6'));
 
 -- ----------------------------
 -- Table structure for XXL_TRIGGERS
@@ -508,10 +434,6 @@ NOCACHE
 -- ----------------------------
 -- Records of XXL_TRIGGERS
 -- ----------------------------
-INSERT INTO "XXL"."XXL_TRIGGERS" VALUES ('quartzScheduler', '8', '3', '8', '3', null, '1499942170000', '1499942169000', '5', 'WAITING', 'CRON', '1499942125000', '0', null, '2', null);
-INSERT INTO "XXL"."XXL_TRIGGERS" VALUES ('quartzScheduler', '4', '3', '4', '3', null, '1499937211000', '1499937210000', '5', 'PAUSED', 'CRON', '1499937132000', '0', null, '2', null);
-INSERT INTO "XXL"."XXL_TRIGGERS" VALUES ('quartzScheduler', '7', '3', '7', '3', null, '1499942097000', '1499942096000', '5', 'PAUSED', 'CRON', '1499939399000', '0', null, '2', null);
-INSERT INTO "XXL"."XXL_TRIGGERS" VALUES ('quartzScheduler', '6', '3', '6', '3', null, '1499938352000', '1499938351000', '5', 'PAUSED', 'CRON', '1499938306000', '0', null, '2', null);
 
 -- ----------------------------
 -- Sequence structure for TRIGGER_GROUP_SEQ
@@ -685,30 +607,7 @@ ALTER TABLE "XXL"."XXL_CRON_TRIGGERS" ADD PRIMARY KEY ("SCHED_NAME", "TRIGGER_NA
 -- ----------------------------
 -- Indexes structure for table XXL_FIRED_TRIGGERS
 -- ----------------------------
-CREATE INDEX "XXL"."IDX_XXL_FT_INST_JOB_REQ_RCVRY"
-ON "XXL"."XXL_FIRED_TRIGGERS" ("SCHED_NAME" ASC, "INSTANCE_NAME" ASC, "REQUESTS_RECOVERY" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_FT_JG"
-ON "XXL"."XXL_FIRED_TRIGGERS" ("SCHED_NAME" ASC, "JOB_GROUP" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_FT_J_G"
-ON "XXL"."XXL_FIRED_TRIGGERS" ("SCHED_NAME" ASC, "JOB_NAME" ASC, "JOB_GROUP" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_FT_TG"
-ON "XXL"."XXL_FIRED_TRIGGERS" ("SCHED_NAME" ASC, "TRIGGER_GROUP" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_FT_TRIG_INST_NAME"
-ON "XXL"."XXL_FIRED_TRIGGERS" ("SCHED_NAME" ASC, "INSTANCE_NAME" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_FT_T_G"
-ON "XXL"."XXL_FIRED_TRIGGERS" ("SCHED_NAME" ASC, "TRIGGER_NAME" ASC, "TRIGGER_GROUP" ASC)
-LOGGING
-VISIBLE;
+
 
 -- ----------------------------
 -- Checks structure for table XXL_FIRED_TRIGGERS
@@ -740,14 +639,7 @@ ALTER TABLE "XXL"."XXL_FIRED_TRIGGERS" ADD PRIMARY KEY ("SCHED_NAME", "ENTRY_ID"
 -- ----------------------------
 -- Indexes structure for table XXL_JOB_DETAILS
 -- ----------------------------
-CREATE INDEX "XXL"."IDX_XXL_J_GRP"
-ON "XXL"."XXL_JOB_DETAILS" ("SCHED_NAME" ASC, "JOB_GROUP" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_J_REQ_RECOVERY"
-ON "XXL"."XXL_JOB_DETAILS" ("SCHED_NAME" ASC, "REQUESTS_RECOVERY" ASC)
-LOGGING
-VISIBLE;
+
 
 -- ----------------------------
 -- Checks structure for table XXL_JOB_DETAILS
@@ -983,54 +875,6 @@ ALTER TABLE "XXL"."XXL_TRIGGER_REGISTRY" ADD PRIMARY KEY ("ID");
 -- ----------------------------
 -- Indexes structure for table XXL_TRIGGERS
 -- ----------------------------
-CREATE INDEX "XXL"."IDX_XXL_T_C"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "CALENDAR_NAME" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_G"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "TRIGGER_GROUP" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_J"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "JOB_NAME" ASC, "JOB_GROUP" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_JG"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "JOB_GROUP" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_NEXT_FIRE_TIME"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "NEXT_FIRE_TIME" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_NFT_MISFIRE"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "MISFIRE_INSTR" ASC, "NEXT_FIRE_TIME" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_NFT_ST"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "TRIGGER_STATE" ASC, "NEXT_FIRE_TIME" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_NFT_ST_MISFIRE"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "MISFIRE_INSTR" ASC, "NEXT_FIRE_TIME" ASC, "TRIGGER_STATE" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_NFT_ST_MISFIRE_GRP"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "MISFIRE_INSTR" ASC, "NEXT_FIRE_TIME" ASC, "TRIGGER_GROUP" ASC, "TRIGGER_STATE" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_N_G_STATE"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "TRIGGER_GROUP" ASC, "TRIGGER_STATE" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_N_STATE"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "TRIGGER_NAME" ASC, "TRIGGER_GROUP" ASC, "TRIGGER_STATE" ASC)
-LOGGING
-VISIBLE;
-CREATE INDEX "XXL"."IDX_XXL_T_STATE"
-ON "XXL"."XXL_TRIGGERS" ("SCHED_NAME" ASC, "TRIGGER_STATE" ASC)
-LOGGING
-VISIBLE;
 
 -- ----------------------------
 -- Checks structure for table XXL_TRIGGERS
